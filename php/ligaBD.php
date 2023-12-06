@@ -4,7 +4,7 @@ function liga()
 {
     $servername = 'localhost';
     $user = 'root';
-    $pass = '';
+    $pass = 'admin';
     $bd = 'projeto_programacao';
     $liga =  mysqli_connect($servername, $user, $pass, $bd);
     if ($liga) {
