@@ -1,0 +1,30 @@
+Login
+Android
+tela de login(nomeUtilizador,pass)btn(entrar)
+
+WEB
+Tela de Login(nomeUtilizador,pass)btn(entrar)
+Tela de Cadastro (nome,idade,morada,contacto,email,funcao,login(nomeUtilizador,pass))btn(registar)
+
+
+Banco
+
+utilizadores tabela
+idUtilizadores PK
+nome
+idade
+morado
+contacto
+email
+idfuncao FK
+idlogin  FK
+
+login tabela
+idlogin PK
+nomeUtilizador
+pass
+
+
+funcao tabela
+idFuncao PK
+nomeFuncao
