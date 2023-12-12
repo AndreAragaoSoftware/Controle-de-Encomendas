@@ -4,8 +4,7 @@
 include 'ligaBD.php';
 
 
-//Teste para saber se os campos então preencidos
-if(isset($_POST['nomeUtilizador']) || isset($_POST['pass'])){
+
     
 if (strlen($_POST['nomeUtilizador']) == 0) {
     echo "Preencha o login";
@@ -39,7 +38,7 @@ if (strlen($_POST['nomeUtilizador']) == 0) {
     }else {
         echo"<script>alert('Error: Login ou senha incorretos')</script>";
         echo"<script>window.location='../html/tela_de_login.html';</script>)";
-}
+    }
     }
 
     
