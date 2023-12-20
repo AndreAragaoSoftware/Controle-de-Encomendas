@@ -4,9 +4,9 @@ function liga()
 {
     $servername = 'localhost';
     $user = 'root';
-    $pass = 'mysql2023';
+    $pass = 'admin';
     $bd = 'projeto_programacao';
-    $liga =  mysqli_connect($servername, $user, $pass, $bd);
+    $liga = mysqli_connect($servername, $user, $pass, $bd);
     if ($liga) {
         return $liga;
     } else {
@@ -24,6 +24,7 @@ function registaUser($query)
 
             return true;
         } else {
+            echo "Erro na query: " . mysqli_error($liga); // Adicionado para depuração
             return false;
         }
     } else {

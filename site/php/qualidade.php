@@ -42,4 +42,3 @@ if (strlen($_POST['nomeUtilizador']) == 0) {
     }
 
     
-}

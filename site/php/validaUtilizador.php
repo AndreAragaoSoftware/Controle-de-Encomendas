@@ -12,7 +12,8 @@ if (strlen($_POST['nomeUtilizador']) == 0) {
 }elseif(strlen($_POST['pass'])== 0){
     echo "Preencha seu password";
 }else {
-
+    
+    //Buscando dados do campos
     $nomeUtilizador = $_POST['nomeUtilizador'];
     $pass = $_POST['pass'];
     
@@ -44,7 +45,10 @@ if (strlen($_POST['nomeUtilizador']) == 0) {
             header("Location: ../html/home.html");
         }elseif($funcao == 2){
             header("Location: ../html/home_supervisor_qualidade.html");
-        }else {
+        }elseif($funcao == 5){
+            header("Location: ../html/home_supervisor_planeamento.html");
+        }
+        else {
             header("Location: home.php");
         }
         
