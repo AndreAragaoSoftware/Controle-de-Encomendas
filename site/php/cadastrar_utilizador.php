@@ -31,7 +31,7 @@ if ($resultVerificaUsuario->num_rows > 0) {
     exit;
 }
 
-
+//Inserindo o login
 $query = "INSERT INTO login (nomeUtilizador, pass) VALUES ('$nomeUtilizador', '$pass')";
 $result_query = registaUser( $query);
 
@@ -52,7 +52,7 @@ $result_query = mostraDados($query) or die ("Falha na execução do código SQL"
         
         $_SESSION['idLogin'] = $login;
         
-//Inserindo dados na tabela utiliadoresz
+//Inserindo dados na tabela utiliadores
   if ($login > 0) {
     $sqlInserirUtilizador = "INSERT INTO utilizadores (nome, idade, morada, contacto, email, idFuncao, idLogin) 
                              VALUES ('$nome', $idade, '$morada', '$contacto', '$email', '$idFuncao', $login)";
