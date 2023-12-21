@@ -1,36 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Tela de Login</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <img src="../img/logo4.png" alt="imagem do logo">
-        <form action="../php/validaUtilizador.php" method="POST" id="formLogin">
-            
-            <!--Login--> 
-            <div class="form-group">
-                <label for="nomeUtilizador">Login</label>
-                <input type="text" class="form-control required" id="nomeUtilizador" name="nomeUtilizador" placeholder="Insira o seu nome de utilizador">
-            </div>
-            
-            <!--Pass-->
-            <div class="form-group">
-                <label for="pass">Password</label>
-                <input type="password" class="form-control required" id="pass" name="pass" placeholder="Insira a sua password">
-            </div>
-            
-            <!--Span caso campos não estejam preenchidos-->
-            <span id="msgErro"></span>
-            <!--Button-->
-             
-            <button type="submit" class="btn btn-success btn-block">Entrar</button>
-        </form>
+      <img src="../img/logo4.png" alt="imagem do logo" />
+      <form action="../php/validaUtilizador.php" method="POST" id="formLogin">
+        <!--Login-->
+        <div class="form-group">
+          <label for="nomeUtilizador">Login</label>
+          <input
+            type="text"
+            class="form-control required"
+            id="nomeUtilizador"
+            name="nomeUtilizador"
+            placeholder="Insira o seu nome de utilizador"
+          />
+        </div>
+
+        <!--Pass-->
+        <div class="form-group">
+          <label for="pass">Password</label>
+          <input
+            type="password"
+            class="form-control required"
+            id="pass"
+            name="pass"
+            placeholder="Insira a sua password"
+          />
+        </div>
+
+        <!--Span caso campos não estejam preenchidos-->
+        <span id="msgErro"></span>
+
+        <!--Button-->
+        <button type="submit" class="btn btn-success btn-block">Entrar</button>
+      </form>
     </div>
     <!--Validação do js-->
     <script src="../js/valida.js"></script>
-</body>
+  </body>
 </html>

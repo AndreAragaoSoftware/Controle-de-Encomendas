@@ -1,13 +1,13 @@
-//Selecionando o formulário de Login
-const formLogin = document.querySelector('#formLogin');
+// Selecionando o formulário de Login
+const formLogin = document.querySelector('#formLogin')
 
-//Recuperando o valor do campo
+// Validando se os campos estão preenchidos
 formLogin.addEventListener('submit', (evento) => {
-  //Capturando o campo login
+  // Recuperando os valores dos campos
   var login = document.querySelector('#nomeUtilizador').value
   var pass = document.querySelector('#pass').value
 
-  //varificando se o campo do login está vazio
+  // Verificando se o campo do login está vazio
   if (login == '') {
     evento.preventDefault()
     document.getElementById('msgErro').innerHTML =
@@ -15,7 +15,7 @@ formLogin.addEventListener('submit', (evento) => {
     return
   }
 
-  //varificando se o campo do pass está vazio
+  // Verificando se o campo do pass está vazio
   if (pass == '') {
     evento.preventDefault()
     document.getElementById('msgErro').innerHTML =
@@ -23,6 +23,7 @@ formLogin.addEventListener('submit', (evento) => {
     return
   }
 
-  // caso os campos estejam preenchidos, executa a action do formulário.
+  // Caso os campos estejam preenchidos, executa a action do formulário.
   formLogin.submit()
-})// Fim Formulário de Login
+}) // Fim Formulário de Login
+

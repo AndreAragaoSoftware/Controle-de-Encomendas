@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/style.css">
     <style type="text/css">
 		.tijolo{background-color: tomato; color: white;}
     </style>
@@ -11,8 +12,8 @@
 </head>
 <body>
     <h2>Registo</h2>
-    <div id="form_registo" class="container">
-		<form id="form_registar" method="POST" action="../php/cadastrar_utilizador.php">
+    <div id="form_utilizadores" class="container">
+		<form id="formUtilizadores" method="POST" action="../php/cadastrar_utilizador.php">
             <!--nome-->
             <div class="row">
 				<div class="col-md-6 col-sm-12">
@@ -54,7 +55,7 @@
             <div class="row">
 				<div class="col-md-6 col-sm-12">
 					<label for="funcao" class="form-label">Função</label>
-    				<select class="form-control" id="tipo" name="idFuncao" required>
+    				<select class="form-control" id="funcao" name="idFuncao" required>
                         <option value="1">Supervisor qualidade</option>
                         <option value="2">Técnico qualidade</option>
                         <option value="3">Supervisor picking</option>
@@ -67,13 +68,18 @@
 			<div class="row">
 				<div class="col-md-6 col-sm-12">
 					<label for="nome" class="form-label">Nome de Utilizador</label>
-    				<input type="text" class="form-control" id="nome" name="nomeUtilizador" placeholder="Insira o seu nome de utilizador">
+    				<input type="text" class="form-control" id="loginUtilizadores" name="nomeUtilizador" placeholder="Insira o seu nome de utilizador">
 				</div>
+				
+				<!-- Pass -->
 				<div class="col-md-6 col-sm-12">
 					<label for="pass" class="form-label">Password</label>
-    				<input type="password" class="form-control" id="pass" name="pass" placeholder="Crie a sua password">
+    				<input type="password" class="form-control" id="passCadastro" name="pass" placeholder="Crie a sua password">
 				</div>
 			</div>
+
+			<!--Span caso campos não estejam preenchidos-->
+            <span id="msgErro"></span>
 
 			<div class="row" >
 				<div class="" style="display: flex; justify-content: center;">
@@ -82,5 +88,7 @@
 			</div>
         </form>
     </div>
+	<!--Validação do js-->
+    <script src="../js/valida_utilizador.js"></script>
 </body>
 </html>
