@@ -45,7 +45,7 @@ if(isset($_POST['nomeUtilizador']) || isset($_POST['pass'])){
                 header("Location: ../html/home_supervisor_qualidade.html");
                 break;
             case 5:
-                header("Location: ../html/home_supervisor_planeamento.html");
+                header("Location: home_supervisor_planeamento.php");
                 break;
             default:
                 header("Location: home.php");

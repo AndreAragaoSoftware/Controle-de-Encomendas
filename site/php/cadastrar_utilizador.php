@@ -58,10 +58,14 @@ $result_query = mostraDados($query) or die ("Falha na execução do código SQL"
                              VALUES ('$nome', $idade, '$morada', '$contacto', '$email', '$idFuncao', $login)";
 
     if (registaUser($sqlInserirUtilizador)) {
-        echo "Dados inseridos com sucesso no banco de dados.";
+        echo"<script>alert('Dados inseridos com sucesso no banco de dados.')</script>";
+        echo"<script>window.location='../html/home_supervisor_planeamento.html';</script>)";
+        
     } else {
-        echo "Erro ao inserir dados na tabela de utilizadores.";
+        echo"<script>alert('Erro ao inserir dados na tabela de utilizadores.')</script>";
+        echo"<script>window.location='../html/cadastro_utilizador.html';</script>)";
     }
 } else {
-    echo "Erro ao obter o ID de login.";
+    echo"<script>alert('Erro ao obter o ID de login.')</script>";
+        echo"<script>window.location='../html/cadastro_utilizador.html';</script>)";
 }}
