@@ -7,10 +7,13 @@ function liga()
     $pass = 'admin';
     $bd = 'projeto_programacao';
     $liga = mysqli_connect($servername, $user, $pass, $bd);
+    if (!$liga) {
+    die("Erro na conexão: " . mysqli_connect_error());
+}
     if ($liga) {
         return $liga;
     } else {
-        echo "<script>alert('Erro ao tentar ligar à base de dados!')";
+        echo "<script>alert('Erro ao tentar ligar à base de dados!')</script>";
 
         return null;
     }
@@ -36,4 +39,20 @@ function mostraDados($query)
     $liga = liga();
 
     return $resultado = mysqli_query($liga, $query);
+}
+function apagaDados($query){
+    $liga = liga();
+
+    if ($liga) {
+        $resultado = mysqli_query($liga, $query);
+
+        if (!$resultado) {
+            echo "Erro na query: " . mysqli_error($liga);
+            return false;
+        }
+
+        return true;
+    }
+
+    return false;
 }

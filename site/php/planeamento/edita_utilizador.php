@@ -1,6 +1,6 @@
 <?php
 // Ligação ao banco
-include 'ligaBD.php';
+include '../ligaBD.php';
 
 // Teste para saber se o idUtilizadores está vazio
 if(!empty($_GET['idUtilizadores'])){
@@ -42,7 +42,7 @@ if (mysqli_num_rows($resultado) > 0) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <style type="text/css">
     .tijolo {
         background-color: tomato;
@@ -133,7 +133,7 @@ if (mysqli_num_rows($resultado) > 0) {
         </form>
     </div>
     <!-- Validação do js -->
-    <script src="../js/valida_utilizador.js"></script>
+    <script src="../../js/planeamento/valida_utilizador.js"></script>
 </body>
 
 </html>

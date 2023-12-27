@@ -30,6 +30,7 @@ if(isset($_POST['nomeUtilizador']) || isset($_POST['pass'])){
         session_start();
         $_SESSION['idLogin'] = $login;
         
+        //Buscando a função
         $query = "SELECT * FROM utilizadores WHERE idLogin = $login";
         $sql_query = mostraDados($query) or die("Falha na execução do código SQL");
         $row = $sql_query->fetch_assoc();
@@ -45,10 +46,10 @@ if(isset($_POST['nomeUtilizador']) || isset($_POST['pass'])){
                 header("Location: ../html/home_supervisor_qualidade.html");
                 break;
             case 5:
-                header("Location: home_supervisor_planeamento.php");
+                header("Location: planeamento/home_supervisor_planeamento.php");
                 break;
             default:
-                header("Location: home.php");
+                header("Location: ../index.html");
             }
         
         exit();

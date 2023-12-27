@@ -1,5 +1,5 @@
 <?php
-include 'ligaBD.php';
+include '../ligaBD.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Recupera os dados do formulário
@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         // Houve um erro na atualização
         echo"<script>alert('Erro ao tentar Utdate!')</script>";
-        echo"<script>window.location='home_supervisor_planeamento.php';</script>)";
+        echo"<script>window.location='edita_utilizador.php';</script>)";
         
     }
 }
