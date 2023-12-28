@@ -9,15 +9,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $morada = $_POST['morada'];
     $contacto = $_POST['contacto'];
     $email = $_POST['email'];
-    $nomeFuncao = $_POST['nomeFuncao'];
+    $idFuncao = $_POST['idFuncao'];
     $nomeUtilizador = $_POST['nomeUtilizador'];
     $pass = $_POST['pass'];
 
     // Consulta SQL para realizar o UPDATE
     $query = "UPDATE utilizadores
           SET nome = '$nome', idade = '$idade', morada = '$morada', contacto = '$contacto',
-              email = '$email', idFuncao = (SELECT idFuncao FROM funcao WHERE nomeFuncao = '$nomeFuncao'),
-              idLogin = (SELECT idLogin FROM login WHERE nomeUtilizador = '$nomeUtilizador')
+              email = '$email', idFuncao = '$idFuncao', idLogin = (SELECT idLogin FROM login WHERE nomeUtilizador = '$nomeUtilizador')
           WHERE idUtilizadores = $idUtilizadores";
 
 

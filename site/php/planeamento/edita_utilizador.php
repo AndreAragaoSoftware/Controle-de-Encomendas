@@ -97,14 +97,32 @@ if (mysqli_num_rows($resultado) > 0) {
                 </div>
             </div>
 
-            <!-- funcao -->
+
+            <!-- Função -->
             <div class="row">
                 <div class="col-md-6 col-sm-12">
                     <label for="nomeFuncao" class="form-label">Função</label>
-                    <input type="text" class="form-control" id="nomeFuncao" name="nomeFuncao"
-                        value="<?php echo $nomeFuncao ?>">
+                    <select class="form-control" id="nomeFuncao" name="idFuncao" required>
+                        <option value="1" <?php echo ($nomeFuncao == 'Supervisor qualidade') ? 'selected' : ''; ?>>
+                            Supervisor
+                            qualidade</option>
+                        <option value="2" <?php echo ($nomeFuncao == 'Técnico de qualidade') ? 'selected' : ''; ?>>
+                            Técnico de
+                            qualidade
+                        </option>
+                        <option value="3" <?php echo ($nomeFuncao == 'Supervisor de picking') ? 'selected' : ''; ?>>
+                            Supervisor de
+                            picking
+                        </option>
+                        <option value="4" <?php echo ($nomeFuncao == 'Picking') ? 'selected' : ''; ?>>Picking
+                        </option>
+                        <option value="5" <?php echo ($nomeFuncao == 'Supervisor de planeamento') ? 'selected' : ''; ?>>
+                            Supervisor de
+                            planeamento</option>
+                    </select>
                 </div>
             </div>
+
 
             <!-- login -->
             <div class="row">
@@ -123,6 +141,7 @@ if (mysqli_num_rows($resultado) > 0) {
 
             <!-- Span caso campos não estejam preenchidos -->
             <span id="msgErro"></span>
+            <!-- Enviando o id para a validação -->
             <input type="hidden" name="idUtilizadores" value="<?php echo $idUtilizadores ?>">
 
             <div class="row">
