@@ -55,7 +55,7 @@
                     </svg>
                 </a>
                 &nbsp;&nbsp;
-                <a class='btn btn-danger btn-sm' href='#' onclick='apagarUtilizador(" . $rows['idProduto'] . ")'>
+                <a class='btn btn-danger btn-sm' href='#' onclick='apagarProduto(" . $rows['idProduto'] . ")'>
 
                 <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor'
                         class='bi bi-trash3-fill' viewBox='0 0 16 16'>
@@ -71,7 +71,7 @@
         </table>
     </div>
     <!--Validação do js-->
-    <script src="../../js/planeamento/apagar_utilizador.js"></script>
+    <script src="../../js/planeamento/apagar.js"></script>
 
 </body>
 

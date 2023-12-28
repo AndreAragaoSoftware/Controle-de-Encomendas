@@ -20,5 +20,24 @@ async function apagarUtilizador(idLogin) {
       }
     }
    
-    
+  
+}
+async function apagarProduto(idProduto) {
+  //Alerta de confirmação.
+  var confirmar = confirm('Tem certeza que deseja excluir o Produto?')
+
+  if (confirmar == true) {
+    // Requisição para o elimina_utilizador.php e envia o paranmetro idUtilizadores
+    const dados = await fetch('elimina_produto.php?idProduto=' + idProduto)
+    // Lendo a resposta do php
+    const resposta = await dados.json()
+    console.log(resposta)
+
+    // resposta for false
+    if (!resposta['status']) {
+      document.getElementById('msgAlerta').innerHTML = resposta['msg']
+    } else {
+      location.reload()
+    }
+  }
 }

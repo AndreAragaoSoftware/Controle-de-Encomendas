@@ -81,7 +81,7 @@
         </table>
     </div>
     <!--Validação do js-->
-    <script src="../../js/planeamento/apagar_utilizador.js"></script>
+    <script src="../../js/planeamento/apagar.js"></script>
 
 </body>
 
