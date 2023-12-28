@@ -17,6 +17,8 @@
     <h1>Sucesso</h1>
     <div><a href="../../html/planeamento/cadastro_utilizador.html">Cadastrar Utilizador</a></div>
     <br>
+    <div><a href="../../html/planeamento/cadastro_produto.html">Cadastrar Produto</a></div>
+    <br>
     <span id="msgAlerta"></span>
 
     <!--Criando tabela para exibir utilizadores-->
