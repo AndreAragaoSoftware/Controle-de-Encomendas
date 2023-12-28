@@ -7,7 +7,7 @@ if(!empty($_GET['idProduto'])){
     // Pegando o id do utilizador selecionado na pag: home_supervisor_planeamento.php
     $idProduto = $_GET['idProduto'];
     
-    // Consulta do banco de dados na tabela utilizadores atraves do idProduto 
+    // Consulta do banco de dados na tabela produtos atraves do idProduto 
     $query = "SELECT * FROM produtos WHERE idProduto = $idProduto";
 
 $resultado = mostraDados($query);
