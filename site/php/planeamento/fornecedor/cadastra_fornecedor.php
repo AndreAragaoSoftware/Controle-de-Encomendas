@@ -1,43 +1,48 @@
 <?php
-
-// Conexão com o banco de dados
 include '../../ligaBD.php';
 
-// Buscando dados dos campos
-$nomeProduto = $_POST['nomeProduto'];
-$tipoAnimal = $_POST['tipoAnimal'];
-$tipoProduto = $_POST['tipoProduto'];
+// Verifica se os campos do formulário foram enviados
+if (isset($_POST['nomeFornecedor'], $_POST['moradaFornecedor'], $_POST['contactoFornecedor'], $_POST['emailFornecedor'], $_POST['responsavel'])) {
 
-if (isset($_POST['nomeProduto'], $_POST['tipoAnimal'], $_POST['tipoProduto'])) {
+    // Recupera os valores dos campos do formulário
+    $nomeFornecedor = $_POST['nomeFornecedor'];
+    $moradaFornecedor = $_POST['moradaFornecedor'];
+    $contactoFornecedor = $_POST['contactoFornecedor'];
+    $emailFornecedor = $_POST['emailFornecedor'];
+    $responsavel = $_POST['responsavel'];
 
+    // Query para verificar se o fornecedor já existe
+    $sqlVerificacaoFornecedor = "SELECT COUNT(*) AS total FROM fornecedores WHERE nome = '$nomeFornecedor'";
+    $resultadoVerificacao = mostraDados($sqlVerificacaoFornecedor);
+    
+    if ($resultadoVerificacao) {
+        $row = mysqli_fetch_assoc($resultadoVerificacao);
+        $total = $row['total'];
 
-
-// Query para verificar se o produto já existe
-$sqlVerificacaoProduto = "SELECT COUNT(*) AS total FROM produtos WHERE nome = '$nomeProduto' AND tipoAnimal = '$tipoAnimal' AND tipoProduto = '$tipoProduto'";
-$resultado = mostraDados($sqlVerificacaoProduto);
-
-if ($resultado) {
-    $row = mysqli_fetch_assoc($resultado);
-    $total = $row['total'];
-
-    if ($total > 0) {
-        echo "<script>alert('Erro: Produto já existe.')</script>";
-        echo "<script>window.location='supervisor_planeamento_produto.php';</script>";
-    } else {
-    // Query para inserir o produto
-    $sqlInserirProduto = "INSERT INTO produtos (nome, tipoAnimal, tipoProduto) VALUES ('$nomeProduto', '$tipoAnimal', '$tipoProduto')";
-    $result_query = registaUser( $sqlInserirProduto);
-    }if ($result_query) {
-        echo "<script>alert('Produto cadastrado com sucesso.')</script>";
-        echo "<script>window.location='supervisor_planeamento_produto.php';</script>";
-    } else {
-        echo "<script>alert('Erro: Ao cadastra Produto.')</script>";
-        echo "<script>window.location='supervisor_planeamento_produto.php';</script>";
+        if ($total > 0) {
+            echo "<script>alert('Erro: Fornecedor já existe.')</script>";
+            echo "<script>window.location='sua_pagina.php';</script>";
+            exit(); // Encerra o script para evitar a execução do restante do código
+        }
     }
-}
-}else {
-    echo "<script>alert('Erro: Variaveis null.')</script>";
-        echo "<script>window.location='supervisor_planeamento_produto.php';</script>";
-}
 
+    // Query para inserir o fornecedor
+    $sqlInserirFornecedor = "INSERT INTO fornecedores (nome, morada, contacto, email, responsavel) VALUES ('$nomeFornecedor', '$moradaFornecedor', '$contactoFornecedor', '$emailFornecedor', '$responsavel')";
+
+    // Executa a query
+    $result_query = registaUser($sqlInserirFornecedor);
+
+    // Verifica se a inserção foi bem-sucedida
+    if ($result_query) {
+        echo "<script>alert('Fornecedor cadastrado com sucesso.')</script>";
+        echo "<script>window.location='home_fornecedor.php';</script>";
+    } else {
+        echo "<script>alert('Erro ao cadastrar fornecedor.')</script>";
+        echo "<script>window.location='formulario_cadastro_fornecedor.php';</script>";
+    }
+
+} else {
+    echo "<script>alert('Erro: Variáveis nulas.')</script>";
+    echo "<script>window.location='formulario_cadastro_fornecedor.php';</script>";
+}
 ?>
