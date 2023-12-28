@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../../css/style.css">
     <style type="text/css">
     .tijolo {
         background-color: tomato;
@@ -18,13 +18,13 @@
 <body>
 
     <h2>Registo</h2>
-    <div id="" class="container">
-        <form id="formUtilizadores" method="POST" action="../php/registo_fornecedor.php">
+    <div class="container">
+        <form id="formFornecedor" method="POST" action="cadastra_fornecedor.php">
             <!--nome-->
             <div class="row">
                 <div class="col-md-6 col-sm-12">
                     <label for="nome" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="nome" name="nome"
+                    <input type="text" class="form-control" id="nomeFornecedor" name="nomeFornecedor"
                         placeholder="Insira o nome do fornecedor">
                 </div>
 
@@ -32,7 +32,8 @@
                 <div class="row">
                     <div class="col">
                         <label for="morada" class="form-label">Morada</label>
-                        <input type="text" class="form-control" id="morada" name="morada" placeholder="Insira a morada">
+                        <input type="text" class="form-control" id="moradaFornecedor" name="moradaFornecedor"
+                            placeholder="Insira a morada">
                     </div>
                 </div>
 
@@ -40,15 +41,15 @@
                 <div class="row">
                     <div class="col-md-6 col-sm-12">
                         <label for="contacto" class="form-label">Contacto</label>
-                        <input type="text" class="form-control" id="contacto" name="contacto"
-                            placeholder="Insira ocontacto">
+                        <input type="text" class="form-control" id="contactoFornecedor" name="contactoFornecedor"
+                            placeholder="Insira o contacto">
                     </div>
 
                     <!-- email -->
                     <div class="row">
                         <div class="col">
                             <label for="email" class="form-label">Email</label>
-                            <input type="text" class="form-control" id="email" name="email"
+                            <input type="text" class="form-control" id="emailFornecedor" name="emailFornecedor"
                                 placeholder="Insira o email">
                         </div>
                     </div>
@@ -56,8 +57,8 @@
                     <!--responsável-->
                     <div class="row">
                         <div class="col-md-6 col-sm-12">
-                            <label for="nome" class="form-label">Responsável</label>
-                            <input type="text" class="form-control" id="nome" name="responsavel"
+                            <label for="responsavel" class="form-label">Responsável</label>
+                            <input type="text" class="form-control" id="responsavel" name="responsavel"
                                 placeholder="Insira o nome do responsavel">
                         </div>
                     </div>
@@ -73,7 +74,7 @@
         </form>
     </div>
     <!--Validação do js-->
-    <script src="../js/valida_utilizador.js"></script>
+    <script src="../../../js/planeamento/fornecedor/valida_fornrcedor.js"></script>
 </body>
 
 </html>

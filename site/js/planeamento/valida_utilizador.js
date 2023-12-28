@@ -53,6 +53,15 @@ formUtilizadores.addEventListener('submit', (e) => {
     return
   }
 
+  // Verificando se o formato do e-mail é válido usando uma expressão regular
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  if (!emailRegex.test(email)) {
+    e.preventDefault() // Evita que o formulário seja enviado
+    document.getElementById('msgErro').innerHTML =
+      "<p style='color: #f00; font-size: 12px;'>Erro: E-mail inválido</p>"
+    return
+  }
+
   // Verificando se o campo do funcao está vazio
   if (funcao == '') {
     e.preventDefault()

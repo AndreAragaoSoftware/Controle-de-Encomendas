@@ -16,8 +16,8 @@
 <body>
     <h1>Sucesso</h1>
     <div><a href="home_supervisor_planeamento.php">Utilizador</a></div>
-    <br>
     <div><a href="../../html/planeamento/cadastro_produto.html">Cadastrar Produto</a></div>
+    <div><a href="fornecedor/supervisor_planeamento_fornecedor.php">Cadastrar Fornecedor</a></div>
     <br>
     <span id="msgAlerta"></span>
 
