@@ -16,9 +16,9 @@
 <body>
     <h1>Sucesso</h1>
     <div><a href="../../html/planeamento/cadastro_utilizador.html">Cadastrar Utilizador</a></div>
-    <br>
     <div><a href="supervisor_planeamento_produto.php">Produto</a></div>
-    <br>
+    <div><a href="fornecedor/home_fornecedor.php">Fornecedor</a></div>
+    <div><a href="encomendas/home_encomendas.php">Enconmenda</a></div>
     <span id="msgAlerta"></span>
 
     <!--Criando tabela para exibir utilizadores-->
