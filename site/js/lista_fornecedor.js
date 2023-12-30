@@ -17,7 +17,6 @@ async function listarFornecedor() {
 
     for (var i = 0; i < fornecedorArray.length; i++) {
       const fornecedor = fornecedorArray[i]
-      console.log('Objeto ' + i + ':', fornecedor)
 
       // Adicionar novas opções
       FornecedorSel.innerHTML +=

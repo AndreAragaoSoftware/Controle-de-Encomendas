@@ -43,28 +43,18 @@
                 </select>
             </div>
 
-
-            <!-- Detalhes dos Produtos (pode adicionar dinamicamente com JavaScript) -->
-            <!-- Produto 1 -->
+            <span id="msgAlertaProduto"></span>
+            <!-- Produto -->
             <div class="row">
-                <div class="col-md-6 col-sm-12">
-                    <label for="nomeProduto1" class="form-label">Produto 1</label>
-                    <input type="text" class="form-control" id="nomeProduto1" name="nomeProduto1"
-                        placeholder="Nome do Produto" required>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <label for="quantidade1" class="form-label">Quantidade</label>
-                    <input type="number" class="form-control" id="quantidade1" name="quantidade1" required>
-                </div>
+                <label for="ProdutoSel">Produto</label>
+                <select name="ProdutoSel" id="ProdutoSel">
+                    <option value="">Selecione</option>
+                </select>
             </div>
+
 
             <!-- Produto 2 (adicionar mais conforme necessário) -->
             <div class="row">
-                <div class="col-md-6 col-sm-12">
-                    <label for="nomeProduto2" class="form-label">Produto 2</label>
-                    <input type="text" class="form-control" id="nomeProduto2" name="nomeProduto2"
-                        placeholder="Nome do Produto" required>
-                </div>
                 <div class="col-md-6 col-sm-12">
                     <label for="quantidade2" class="form-label">Quantidade</label>
                     <input type="number" class="form-control" id="quantidade2" name="quantidade2" required>
@@ -81,7 +71,8 @@
             </div>
         </form>
     </div>
-    <script src="../../../js/custom.js"></script>
+    <script src="../../../js/lista_fornecedor.js"></script>
+    <script src="../../../js/lista_produto.js"></script>
     <!-- Validação do JavaScript <script src="../../../js/planeamento/encomenda/valida_encomenda.js"></script>  -->
 
 </body>
