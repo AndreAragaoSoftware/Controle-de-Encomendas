@@ -1,29 +1,15 @@
 <?php 
 // Verifica se o idEncomenda não está vazio
 $idEncomenda = (!empty($_GET['idEncomenda'])) ? intval($_GET['idEncomenda']) : 0;
+ include 'cabecalho_econmendas.php'; 
+?>
 
- ?>
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-    </script>
-    <title>Visualizar Detalhes de Encomenda</title>
-</head>
 
 <body>
-    <h1>Detalhes da Encomenda</h1>
-
     <!-- Criando tabela para exibir detalhes de encomendas -->
-    <div class="table-responsive">
-        <table class="table table-striped table-hover table-bordered">
+    <div class="row justify-content-center">
+        <table
+            class="table table-responsive table-striped table-hover table-bordered table-sm align-middle text-center  w-75">
             <tr>
                 <th>Nome do Produto</th>
                 <th>Quantidade</th>
@@ -63,29 +49,22 @@ $idEncomenda = (!empty($_GET['idEncomenda'])) ? intval($_GET['idEncomenda']) : 0
             ?>
             <!--Fim da tabela-->
         </table>
-    </div>
-    <div class="container">
-        <div class="row">
-            <label>Previsão de Chegada:</label>
-            <label>
-                <?php echo"$horaChegada" ?>
-            </label>
-        </div>
-        <div class="row">
-            <label>Previsão de Chegada:</label>
-            <label>
-                <?php echo"$dataEncomenda" ?>
-            </label>
-        </div>
-        <div class="row">
-            <label class="text-dark">Total de Caixas:</label>
-            <label class="text-danger">
-                <?php echo"$quantCaixa caixas" ?>
-            </label>
-        </div>
-    </div>
-    <!-- Validação do js -->
-    <script src="../../../js/planeamento/apagar.js"></script>
+        <table class="table table-responsive  table-bordered table-sm align-middle text-center table-secondary w-75">
+            <tr>
+                <td>Data da chegada</td>
+                <td><?php echo"$dataEncomenda" ?></td>
+            </tr>
+            <tr>
+                <td>Previsão de Chegada:</td>
+                <td><?php echo"$horaChegada" ?></td>
+            </tr>
+            <tr>
+                <td>Total de Caixas:</td>
+                <td><?php echo"$quantCaixa" ?></td>
+            </tr>
+        </table>
+        <!-- Validação do js -->
+        <script src="../../../js/planeamento/apagar.js"></script>
 
 </body>
 
