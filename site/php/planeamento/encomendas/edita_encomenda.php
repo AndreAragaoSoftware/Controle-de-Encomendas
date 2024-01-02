@@ -19,12 +19,12 @@ if (!empty($_GET['idEncomenda'])) {
     } else {
         // Caso não haja resultados para o idEncomenda fornecido
         echo "<script>alert('Encomenda não encontrada.')</script>";
-        echo "<script>window.location='home_encomenda.php';</script>";
+        echo "<script>window.location='home_encomendas.php';</script>";
     }
 } else {
     // Caso o idEncomenda esteja vazio
     echo "<script>alert('Erro ao identificar a Encomenda.')</script>";
-    echo "<script>window.location='home_encomenda.php';</script>";
+    echo "<script>window.location='home_encomendas.php';</script>";
 }
 ?>
 
@@ -92,6 +92,11 @@ if (!empty($_GET['idEncomenda'])) {
                     <button type="submit" class="btn btn-success btn-lg"
                         style="margin: 10px; font-size: 1.25em;">Atualizar Encomenda</button>
                 </div>
+            </div>
+            <!--Botão voltar -->
+            <div class="" style="display: flex; justify-content: center;">
+                <a href="home_encomendas.php"><button class="btn_voltar" type="submit"
+                        style="margin: 10px; font-size: 1.25em;">Voltar</button></a>
             </div>
         </form>
     </div>
