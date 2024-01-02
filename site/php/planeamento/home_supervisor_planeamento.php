@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
     <h1>Sucesso</h1>
     <div><a href="../../html/planeamento/cadastro_utilizador.html">Cadastrar Utilizador</a></div>
     <div><a href="supervisor_planeamento_produto.php">Produto</a></div>

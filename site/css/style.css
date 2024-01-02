@@ -6,7 +6,7 @@ body {
   padding: 0;
 }
 
-img {
+.login {
   width: 20%;
   height: 20%;
   margin-top: 20px;
@@ -46,6 +46,18 @@ select {
   border-radius: 4px;
 }
 
+.row label {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.row input,
+.row select {
+    width: 100%;
+    box-sizing: border-box;
+}
+
 button[type='submit'] {
   background-color: #ff0062;
   color: #fff;
@@ -55,3 +67,15 @@ button[type='submit'] {
 button[type='submit']:hover {
   background-color: #45a049;
 }
+
+.btn_voltar[type='submit'] {
+  background-color:rgba(233, 8, 8, 0.514);
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn_voltar[type='submit']:hover {
+  background-color: red;
+}
+
+

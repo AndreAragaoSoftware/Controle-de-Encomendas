@@ -1,0 +1,66 @@
+
+/* ---------------------- NAVBAR ------------------------ */
+
+/* Estilo para a barra de navegação */
+.navbar {
+  background-color: #ffffff; /* Cor de fundo */
+  padding: 15px 0; /* Espaçamento interno superior e inferior */
+}
+
+/* Estilo para o link da marca na barra de navegação */
+.navbar-brand {
+  color: #343a40; /* Cor do texto */
+  font-weight: bold; /* Negrito */
+}
+
+/* Estilo para os links na barra de navegação */
+.navbar-nav .nav-link {
+  color: #343a40; /* Cor do texto */
+}
+
+/* Estilo para os links ativos na barra de navegação */
+.navbar-nav .nav-link.active {
+  color: #007bff; /* Cor do texto para links ativos */
+}
+
+/* Estilo para os links desativados na barra de navegação */
+.navbar-nav .nav-link.disabled {
+  color: #6c757d; /* Cor do texto para links desativados */
+}
+
+/* Estilo para o formulário de pesquisa na barra de navegação */
+.navbar-form {
+  margin-right: 15px; /* Espaçamento direito */
+}
+
+/* Estilo para o botão de pesquisa na barra de navegação */
+.navbar-form .btn {
+  color: #000000; /* Cor do texto do botão */
+  background-color: #ff0062; /* Cor de fundo do botão */
+  border-color: #ff0062; /* Cor da borda do botão */
+}
+
+/* Estilo para o botão de pesquisa na barra de navegação quando passa o mouse */
+.navbar-form .btn:hover {
+  background-color: #218838; /* Cor de fundo do botão ao passar o mouse */
+  border-color: #1e7e34; /* Cor da borda do botão ao passar o mouse */
+}
+
+
+/* ---------------------- FOOTER ------------------------ */
+
+/* Estilo para o rodapé */
+footer {
+  background-color: #ff0062; /* Cor de fundo */
+  color: #000000; /* Cor do texto */
+  padding: 20px 0; /* Espaçamento interno superior e inferior */
+  margin-bottom: 0px;
+  text-align: center;
+  
+
+}
+
+/* Estilo para o texto do rodapé */
+footer p {
+  margin-bottom: 0px; /* Margem inferior do parágrafo */
+}
