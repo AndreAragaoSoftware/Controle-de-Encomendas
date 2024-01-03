@@ -3,20 +3,20 @@ $quantCaixa = 0;
 $idEncomenda = 0;
 ?>
 
-<body>
+<body><label for="">Filtra por data</label>
+    <input type="date" id="dataFilter" class=" mt-3 mb-3 mr-2">
 
-    <div class="table-responsive">
-        <table class="table table-striped table-hover table-bordered text-center table-sm table-md">
-            <thead>
-                <tr>
-                    <th>Data da Entrega</th>
-                    <th>Hora de Chegada</th>
-                    <th>Fornecedor</th>
-                    <th>Quantidade de caixas</th>
-                    <th>Ações</th>
-                </tr>
+    <div class=" table-responsive">
+        <table class="table table-striped table-hover table-bordered text-center table-sm table-md" <thead>
+            <tr>
+                <th>Data da Entrega</th>
+                <th>Hora de Chegada</th>
+                <th>Fornecedor</th>
+                <th>Quantidade de caixas</th>
+                <th>Ações</th>
+            </tr>
             </thead>
-            <tbody>
+            <tbody id="FilterTabela">
                 <?php
                 include '../../ligaBD.php';
 
@@ -79,13 +79,16 @@ $idEncomenda = 0;
                 &nbsp;&nbsp;
                
                       </td></tr>  ";
+                      
+                    // Zerando o valor das caixas.
+                    $quantCaixa = 0;
                 }
                 ?>
             </tbody>
         </table>
     </div>
-
-
+    <!-- Validação do js -->
+    <script src="../../../js/planeamento/encomendas/filtro.js"></script>
 </body>
 
 </html>
