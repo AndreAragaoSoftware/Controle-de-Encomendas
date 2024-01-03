@@ -21,6 +21,15 @@ $idEncomenda = (!empty($_GET['idEncomenda'])) ? intval($_GET['idEncomenda']) : 0
             // Inicializa a variável $quantCaixa
             $quantCaixa = 0;
 
+             // Query para verificar se o fornecedor já existe
+             $sqlVerificacaoProdutos = "SELECT COUNT(*) AS total FROM detalhes_encomenda WHERE idEncomenda = '$idEncomenda'";
+             $resultadoVerificacao = mostraDados($sqlVerificacaoProdutos);
+                    
+            $row = mysqli_fetch_assoc($resultadoVerificacao);
+            $total = $row['total'];
+
+            if ($total > 0) {
+            
             // Query para buscar detalhes da encomenda
             $query = "SELECT detalhes_encomenda.*, produtos.nome AS nome_produto,
                       encomendas.dataEncomenda, encomendas.horaChegada
@@ -30,7 +39,8 @@ $idEncomenda = (!empty($_GET['idEncomenda'])) ? intval($_GET['idEncomenda']) : 0
                       WHERE detalhes_encomenda.idEncomenda = $idEncomenda";
 
             $sql_query = mostraDados($query) or die("Falha na execução do código SQL");
-
+    
+            
             // Colocando os dados na tabela
             while ($rows = mysqli_fetch_assoc($sql_query)) {
                 echo "<tr>
@@ -45,6 +55,11 @@ $idEncomenda = (!empty($_GET['idEncomenda'])) ? intval($_GET['idEncomenda']) : 0
                      // Soma a quantidade de caixas
                      $quantCaixa += $rows['quantidade'];
             }
+        }else{
+            echo "<script>alert('Não tem produto cadastrado na encomenda.')</script>";
+            echo "<script>window.location='home_encomendas.php';</script>";
+            exit();
+        }
 
             ?>
             <!--Fim da tabela-->

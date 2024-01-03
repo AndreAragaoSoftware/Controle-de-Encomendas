@@ -21,7 +21,7 @@ if (isset($_POST['nomeFornecedor'], $_POST['moradaFornecedor'], $_POST['contacto
 
         if ($total > 0) {
             echo "<script>alert('Erro: Fornecedor já existe.')</script>";
-            echo "<script>window.location='sua_pagina.php';</script>";
+            echo "<script>window.location='formulario_cadastro_fornecedor.php';</script>";
             exit(); // Encerra o script para evitar a execução do restante do código
         }
     }
