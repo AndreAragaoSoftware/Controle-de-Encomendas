@@ -93,12 +93,12 @@ if (!empty($_GET['idEncomenda'])) {
                         style="margin: 10px; font-size: 1.25em;">Atualizar Encomenda</button>
                 </div>
             </div>
-            <!--Botão voltar -->
-            <div class="" style="display: flex; justify-content: center;">
-                <a href="home_encomendas.php"><button class="btn_voltar" type="submit"
-                        style="margin: 10px; font-size: 1.25em;">Voltar</button></a>
-            </div>
         </form>
+        <!--Botão voltar -->
+        <div class="" style="display: flex; justify-content: center;">
+            <a href="home_encomendas.php"><button class="btn_voltar" type="submit"
+                    style="margin: 10px; font-size: 1.25em;">Voltar</button></a>
+        </div>
     </div>
     <!-- Script de validação JS, se necessário -->
     <script src="../../../js/planeamento/encomendas/valida_encomenda.js"></script>

@@ -33,7 +33,10 @@
                         <a class="nav-link active" href="../home_supervisor_planeamento.php">Utilizador</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="../fornecedor/home_fornecedor.php">Utilizador</a>
+                        <a class="nav-link active" href="../fornecedor/home_fornecedor.php">Fornecedor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home_encomendas.php">Encomendas</a>
                     </li>
                 </ul>
                 <!-- Botão para criar enconmenda -->

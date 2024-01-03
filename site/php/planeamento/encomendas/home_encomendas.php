@@ -1,4 +1,7 @@
-<?php include 'cabecalho_econmendas.php'; ?>
+<?php include 'cabecalho_econmendas.php'; 
+$quantCaixa = 0;
+$idEncomenda = 0;
+?>
 
 <body>
 
@@ -9,6 +12,7 @@
                     <th>Data da Entrega</th>
                     <th>Hora de Chegada</th>
                     <th>Fornecedor</th>
+                    <th>Quantidade de caixas</th>
                     <th>Ações</th>
                 </tr>
             </thead>
@@ -25,7 +29,26 @@
                     echo "<tr>
                             <td>{$rows['dataEncomenda']}</td>
                             <td>{$rows['horaChegada']}</td>
-                            <td>{$rows['nomeFornecedor']}</td>
+                            <td>{$rows['nomeFornecedor']}</td>";
+                            
+                    // Armazena o valor de idEncomenda
+                    $idEncomenda = $rows['idEncomenda'];
+
+                    $queryQuant = "SELECT detalhes_encomenda.*, produtos.nome AS nome_produto,
+                      encomendas.dataEncomenda, encomendas.horaChegada
+                      FROM detalhes_encomenda
+                      JOIN produtos ON detalhes_encomenda.idProduto = produtos.idProduto
+                      JOIN encomendas ON detalhes_encomenda.idEncomenda = encomendas.idEncomenda
+                      WHERE detalhes_encomenda.idEncomenda = $idEncomenda";
+
+                    $sql_queryQuant = mostraDados($queryQuant) or die("Falha na execução do código SQL");
+
+                    // Colocando os dados na tabela
+                    while ($rowsQuant = mysqli_fetch_assoc($sql_queryQuant)) {
+                        $quantCaixa += $rowsQuant['quantidade'];
+                    }
+
+                      echo "<td>$quantCaixa</td>      
                             <td>
                              <a class=' btn btn-primary btn-sm' href='edita_encomenda.php?idEncomenda=" . $rows['idEncomenda'] . " '> 
                                 <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor'
