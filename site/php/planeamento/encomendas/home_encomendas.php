@@ -3,7 +3,11 @@ $quantCaixa = 0;
 $idEncomenda = 0;
 ?>
 
-<body><label for="">Filtra por data</label>
+<body>
+    <br>
+    <!--Alerta-->
+    <span id="msgAlerta"></span>
+    <label for="">Filtra por data</label>
     <input type="date" id="dataFilter" class=" mt-3 mb-3 mr-2">
 
     <div class=" table-responsive">
@@ -77,6 +81,13 @@ $idEncomenda = 0;
                 </a>
                   
                 &nbsp;&nbsp;
+
+            <a class='btn btn-danger btn-sm' href='#' onclick='apagarEncomenda(" . $rows['idEncomenda'] . ")'>
+                <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-trash3-fill' viewBox='0 0 16 16'>
+                 <path d='M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5' />
+                 </svg>
+            </a>
+
                
                       </td></tr>  ";
                       
@@ -88,7 +99,11 @@ $idEncomenda = 0;
         </table>
     </div>
     <!-- Validação do js -->
-    <script src="../../../js/planeamento/encomendas/filtro.js"></script>
+    <script src="../../../js/planeamento/apagar.js"></script>
+    <!-- Validação do js -->
+    <script src="../../../js/planeamento/encomendas/filtro.js">
+    </script>
+
 </body>
 
 </html>

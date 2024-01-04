@@ -19,6 +19,7 @@
     <div><a href="../supervisor_planeamento_produto.php">Produto</a></div>
     <div><a href="formulario_cadastro_fornecedor.php">Cadastrar Fornecedor</a></div>
     <br>
+    <!--Alerta-->
     <span id="msgAlerta"></span>
 
     <!--Criando tabela para exibir utilizadores-->
