@@ -40,7 +40,7 @@ if(isset($_POST['nomeUtilizador']) || isset($_POST['pass'])){
         // Redirecionamento com base na função do usuário
         switch ($funcao) {
             case 1:
-                header("Location: ../html/home.html");
+                header("Location: qualidade/encomendas/home_encomendas.php");
                 break;
             case 2:
                 header("Location: ../html/home_supervisor_qualidade.html");
