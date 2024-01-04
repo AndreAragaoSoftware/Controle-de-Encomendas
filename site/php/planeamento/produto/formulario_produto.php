@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../../css/style.css">
     <style type="text/css">
-        .tijolo { background-color: tomato; color: white; }
+    .tijolo {
+        background-color: tomato;
+        color: white;
+    }
     </style>
     <title>Registar_produto</title>
 </head>
+
 <body>
 
     <h2>Registo de produtos</h2>
     <div class="container">
-        <form id="formProdutos" method="POST" action="../../php/planeamento/cadastra_produto.php">
+        <form id="formProdutos" method="POST" action="cadastra_produto.php">
             <!-- Nome -->
             <div class="row">
                 <div class="col-md-6 col-sm-12">
                     <label for="nomeProduto" class="form-label">Nome do Produto</label>
-                    <input type="text" class="form-control" id="nomeProduto" name="nomeProduto" placeholder="Insira nome do produto">
-                </div>  
+                    <input type="text" class="form-control" id="nomeProduto" name="nomeProduto"
+                        placeholder="Insira nome do produto">
+                </div>
             </div>
 
             <!-- Tipo de animal -->
@@ -60,6 +66,7 @@
     </div>
 
     <!-- Validação do JavaScript -->
-    <script src="../../js/planeamento/valida_produto.js"></script>
+    <script src="../../../js/planeamento/valida_produto.js"></script>
 </body>
+
 </html>

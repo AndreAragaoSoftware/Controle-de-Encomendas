@@ -24,7 +24,7 @@
             <?php
         
         //Conexão com banco de dados
-            include '../ligaBD.php';
+            include '../../ligaBD.php';
         
             // Buscando os campos das tabelas utilizadores, funcao e login
             $query = "SELECT * FROM produtos";
@@ -61,7 +61,7 @@
         </table>
     </div>
     <!--Validação do js-->
-    <script src="../../js/planeamento/apagar.js"></script>
+    <script src="../../../js/planeamento/apagar.js"></script>
 
 </body>
 

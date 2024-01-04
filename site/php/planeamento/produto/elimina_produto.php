@@ -1,6 +1,6 @@
 <?php
 
-include '../ligaBD.php';
+include '../../ligaBD.php';
 
 $idProduto = filter_input(INPUT_GET, "idProduto", FILTER_SANITIZE_NUMBER_INT);
 

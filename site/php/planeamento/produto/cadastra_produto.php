@@ -1,7 +1,7 @@
 <?php
 
 // Conexão com o banco de dados
-include '../ligaBD.php';
+include '../../ligaBD.php';
 
 // Buscando dados dos campos
 $nomeProduto = $_POST['nomeProduto'];
@@ -32,7 +32,7 @@ if ($resultado) {
         echo "<script>window.location='supervisor_planeamento_produto.php';</script>";
     } else {
         echo "<script>alert('Erro: Ao cadastra Produto.')</script>";
-        echo "<script>window.location='supervisor_planeamento_produto.php';</script>";
+        echo "<script>window.location='formulario_produto.php';</script>";
     }
 }
 }else {

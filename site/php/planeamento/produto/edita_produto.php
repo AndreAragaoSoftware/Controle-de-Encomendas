@@ -1,6 +1,6 @@
 <?php
 // Ligação ao banco
-include '../ligaBD.php';
+include '../../ligaBD.php';
 
 // Teste para saber se o idProduto está vazio
 if(!empty($_GET['idProduto'])){
@@ -32,7 +32,7 @@ if (mysqli_num_rows($resultado) > 0) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../../css/style.css">
     <style type="text/css">
     .tijolo {
         background-color: tomato;
@@ -46,7 +46,7 @@ if (mysqli_num_rows($resultado) > 0) {
 
     <h2>Registo de produtos</h2>
     <div class="container">
-        <form id="formProdutos" method="POST" action="../../php/planeamento/update_produto.php">
+        <form id="formProdutos" method="POST" action="update_produto.php">
             <!-- Nome -->
             <div class="row">
                 <div class="col-md-6 col-sm-12">
@@ -101,7 +101,7 @@ if (mysqli_num_rows($resultado) > 0) {
     </div>
 
     <!-- Validação do JavaScript -->
-    <script src="../../js/planeamento/valida_produto.js"></script>
+    <script src="../../../js/planeamento/valida_produto.js"></script>
 </body>
 
 </html>

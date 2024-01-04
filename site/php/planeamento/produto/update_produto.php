@@ -1,5 +1,5 @@
 <?php
-include '../ligaBD.php';
+include '../../ligaBD.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Recupera os dados do formulário
@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo"<script>window.location='supervisor_planeamento_produto.php';</script>)";
     } else {
         // Houve um erro na atualização
-        echo"<script>alert('Erro ao tentar Utdate!')</script>";
+        echo"<script>alert('Erro ao tentar Atualizar!')</script>";
         echo"<script>window.location='edita_produto.php';</script>)";
         
     }
