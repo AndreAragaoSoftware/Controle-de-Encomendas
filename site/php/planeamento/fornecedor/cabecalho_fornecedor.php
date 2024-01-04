@@ -33,15 +33,16 @@
                         <a class="nav-link active" href="../utilizador/home_supervisor_planeamento.php">Utilizador</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="../fornecedor/home_fornecedor.php">Fornecedor</a>
+                        <a class="nav-link active" href="home_fornecedor.php">Fornecedor</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="home_encomendas.php">Encomendas</a>
+                        <a class="nav-link active" href="../encomendas/home_encomendas.php">Encomendas</a>
                     </li>
                 </ul>
                 <!-- Botão para criar enconmenda -->
-                <a href="formulario_encomendas.php" class="btn btn-outline-success" style="margin-right: 10px;">Adcionar
-                    Encomenda</a>
+                <a href="formulario_cadastro_fornecedor.php" class="btn btn-outline-success"
+                    style="margin-right: 10px;">Adcionar
+                    Fornecedor</a>
 
             </div>
     </nav>

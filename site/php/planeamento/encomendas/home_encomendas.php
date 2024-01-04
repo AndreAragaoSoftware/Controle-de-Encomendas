@@ -4,7 +4,6 @@ $idEncomenda = 0;
 ?>
 
 <body>
-    <br>
     <!--Alerta-->
     <span id="msgAlerta"></span>
     <label for="">Filtra por data</label>

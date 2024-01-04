@@ -9,11 +9,8 @@
 </head>
 
 <body>
-    <h1>Sucesso</h1>
-    <div><a href="../home_supervisor_planeamento.php">Utilizador</a></div>
-    <div><a href="../supervisor_planeamento_produto.php">Produto</a></div>
-    <div><a href="formulario_cadastro_fornecedor.php">Cadastrar Fornecedor</a></div>
-    <br>
+    <?php include"cabecalho_fornecedor.php" ?>
+
     <!--Alerta-->
     <span id="msgAlerta"></span>
 
@@ -26,7 +23,7 @@
                 <Th>Email</Th>
                 <Th>Responsável</Th>
                 <Th>Contacto</Th>
-                <th></th>
+                <th>Ações</th>
             </tr>
             <?php
         
