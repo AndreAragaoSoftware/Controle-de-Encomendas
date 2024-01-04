@@ -12,8 +12,8 @@ $idEncomenda = (!empty($_GET['idEncomenda'])) ? intval($_GET['idEncomenda']) : 0
             class="table table-responsive table-striped table-hover table-bordered table-sm align-middle text-center  w-75">
             <tr>
                 <th>Nome do Produto</th>
+                <th>Tipo</th>
                 <th>Quantidade</th>
-                <th>Ações</th>
             </tr>
             <?php
             // Conexão com banco de dados
@@ -31,12 +31,20 @@ $idEncomenda = (!empty($_GET['idEncomenda'])) ? intval($_GET['idEncomenda']) : 0
             if ($total > 0) {
             
             // Query para buscar detalhes da encomenda
-            $query = "SELECT detalhes_encomenda.*, produtos.nome AS nome_produto,
-                      encomendas.dataEncomenda, encomendas.horaChegada
-                      FROM detalhes_encomenda
-                      JOIN produtos ON detalhes_encomenda.idProduto = produtos.idProduto
-                      JOIN encomendas ON detalhes_encomenda.idEncomenda = encomendas.idEncomenda
-                      WHERE detalhes_encomenda.idEncomenda = $idEncomenda";
+            $query = "SELECT detalhes_encomenda.*, produtos.nome 
+                    AS  
+                        nome_produto,
+                        produtos.tipoProduto,
+                        encomendas.dataEncomenda, 
+                        encomendas.horaChegada
+                    FROM 
+                        detalhes_encomenda
+                    JOIN 
+                        produtos ON detalhes_encomenda.idProduto = produtos.idProduto
+                    JOIN 
+                        encomendas ON detalhes_encomenda.idEncomenda = encomendas.idEncomenda
+                    WHERE 
+                        detalhes_encomenda.idEncomenda = $idEncomenda";
 
             $sql_query = mostraDados($query) or die("Falha na execução do código SQL");
     
@@ -45,7 +53,7 @@ $idEncomenda = (!empty($_GET['idEncomenda'])) ? intval($_GET['idEncomenda']) : 0
             while ($rows = mysqli_fetch_assoc($sql_query)) {
                 echo "<tr>
                         <td>" . $rows['nome_produto'] . "</td>
-                        <td>" . $rows['quantidade'] . "</td>
+                        <td>" . $rows['tipoProduto'] . "</td>
                         <td>" . $rows['quantidade'] . "</td>
                       </tr>";
                       // Armazena o valor de horaChegada

@@ -12,7 +12,7 @@
         color: white;
     }
     </style>
-    <title>Registo_fornececor</title>
+    <title>Registo Fornececor</title>
 </head>
 
 <body>
