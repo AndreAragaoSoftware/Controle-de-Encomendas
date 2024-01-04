@@ -1,5 +1,5 @@
 <?php
-include '../ligaBD.php';
+include '../../ligaBD.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Recupera os dados do formulário

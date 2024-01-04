@@ -15,11 +15,7 @@
 
 <body>
 
-    <h1>Sucesso</h1>
-    <div><a href="../../html/planeamento/cadastro_utilizador.html">Cadastrar Utilizador</a></div>
-    <div><a href="supervisor_planeamento_produto.php">Produto</a></div>
-    <div><a href="fornecedor/home_fornecedor.php">Fornecedor</a></div>
-    <div><a href="encomendas/home_encomendas.php">Enconmenda</a></div>
+    <?php include "cabecalho_utilizador.php"?>
     <span id="msgAlerta"></span>
 
     <!--Criando tabela para exibir utilizadores-->
@@ -34,12 +30,12 @@
                 <Th>Função</Th>
                 <Th>Login</Th>
                 <Th>Password</Th>
-                <th></th>
+                <th>Ações</th>
             </tr>
             <?php
         
         //Conexão com banco de dados
-            include '../ligaBD.php';
+            include '../../ligaBD.php';
         
             // Buscando os campos das tabelas utilizadores, funcao e login
             $query = "SELECT utilizadores.*, funcao.nomeFuncao, nomeUtilizador,pass FROM utilizadores
@@ -82,7 +78,7 @@
         </table>
     </div>
     <!--Validação do js-->
-    <script src="../../js/planeamento/apagar.js"></script>
+    <script src="../../../js/planeamento/apagar.js"></script>
 
 </body>
 

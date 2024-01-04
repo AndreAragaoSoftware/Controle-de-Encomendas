@@ -1,7 +1,7 @@
 <?php
 
 //Conexão com banco de dados
-include '../ligaBD.php';
+include '../../ligaBD.php';
 
 //Buscando dados do campos
 $nome = $_POST['nome'];
@@ -18,8 +18,8 @@ $sqlVerificaUsuario = "SELECT * FROM login WHERE nomeUtilizador = '$nomeUtilizad
 $resultVerificaUsuario = mostraDados($sqlVerificaUsuario);
 
 if ($resultVerificaUsuario->num_rows > 0) {
-    echo 'Nome de usuário já existe. Escolha outro.';
-    exit;
+    echo "<script>alert('Erro: Login já existente.')</script>";
+        echo "<script>window.location='formulario_utilizador.php';</script>";
 }
 
 // Verificando se o nome de utizador já existe
@@ -27,8 +27,8 @@ $sqlVerificaUtilizador = "SELECT * FROM utilizadores WHERE nome = '$nome'";
 $resultVerificaUsuario = mostraDados($sqlVerificaUtilizador);
 
 if ($resultVerificaUsuario->num_rows > 0) {
-    echo 'Nome de usuário já existe. Escolha outro.';
-    exit;
+    echo "<script>alert('Erro: Utilizador já existente.')</script>";
+        echo "<script>window.location='formulario_utilizador.php';</script>";
 }
 
 //Inserindo o login
@@ -58,14 +58,14 @@ $result_query = mostraDados($query) or die ("Falha na execução do código SQL"
                              VALUES ('$nome', $idade, '$morada', '$contacto', '$email', '$idFuncao', $login)";
 
     if (registaUser($sqlInserirUtilizador)) {
-        echo"<script>alert('Dados inseridos com sucesso no banco de dados.')</script>";
+        echo"<script>alert('Utilizador cadastrado com sucesso!')</script>";
         echo"<script>window.location='home_supervisor_planeamento.php';</script>)";
         
     } else {
         echo"<script>alert('Erro ao inserir dados na tabela de utilizadores.')</script>";
-        echo"<script>window.location='../../html/cadastro_utilizador.html';</script>)";
+        echo"<script>window.location='formulario_utilizador.php';</script>)";
     }
 } else {
     echo"<script>alert('Erro ao obter o ID de login.')</script>";
-        echo"<script>window.location='../../html/cadastro_utilizador.html';</script>)";
+        echo"<script>window.location='formulario_utilizador.php';</script>)";
 }}
