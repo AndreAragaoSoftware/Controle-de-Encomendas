@@ -57,7 +57,7 @@ if(isset($_POST['nomeUtilizador']) || isset($_POST['pass'])){
     }else {
         // Caso o login ou senha estejam errados  
         echo"<script>alert('Error: Login ou senha incorretos')</script>";
-        echo"<script>window.location='../html/tela_de_login.html';</script>)";
+        echo"<script>window.location='../index.html';</script>)";
          exit();
     }
     }

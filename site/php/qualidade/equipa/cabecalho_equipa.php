@@ -31,7 +31,7 @@
 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="home_encomendas.php">Encomendas</a>
+                        <a class="nav-link active" href="../encomendas/home_encomendas.php">Encomendas</a>
                     </li>
                 </ul>
 
