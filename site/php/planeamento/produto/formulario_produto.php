@@ -39,6 +39,7 @@
                         <option value="Pato">Pato</option>
                         <option value="Borrego">Borrego</option>
                         <option value="Cabrito">Cabrito</option>
+                        <option value="Porco">Porco</option>
                     </select>
                 </div>
             </div>

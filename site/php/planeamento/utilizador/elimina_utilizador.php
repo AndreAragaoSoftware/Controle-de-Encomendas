@@ -1,6 +1,6 @@
 <?php
 
-include '../ligaBD.php';
+include '../../ligaBD.php';
 
 $idLogin = filter_input(INPUT_GET, "idLogin", FILTER_SANITIZE_NUMBER_INT);
 

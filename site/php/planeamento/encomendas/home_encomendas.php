@@ -1,6 +1,9 @@
 <?php include 'cabecalho_econmendas.php'; 
 $quantCaixa = 0;
 $idEncomenda = 0;
+$horaChegada = 0;
+$horaChegadaPr = 0;
+$tempoLiberacao = 0;
 ?>
 
 <body>
@@ -16,6 +19,7 @@ $idEncomenda = 0;
                 <th>Hora de Chegada</th>
                 <th>Fornecedor</th>
                 <th>Quantidade de caixas</th>
+                <th>Previsão de liberação</th>
                 <th>Ações</th>
             </tr>
             </thead>
@@ -24,8 +28,11 @@ $idEncomenda = 0;
                 include '../../ligaBD.php';
 
                 $query = "SELECT encomendas.idEncomenda, encomendas.dataEncomenda, encomendas.horaChegada, fornecedores.nome AS nomeFornecedor
-                    FROM encomendas
-                    INNER JOIN fornecedores ON encomendas.idFornecedor = fornecedores.idFornecedor";
+           FROM encomendas
+           INNER JOIN fornecedores ON encomendas.idFornecedor = fornecedores.idFornecedor
+           ORDER BY encomendas.dataEncomenda ASC, TIME(encomendas.horaChegada) ASC";
+
+
                 $sql_query = mostraDados($query) or die("Falha na execução do código SQL");
 
                 while ($rows = mysqli_fetch_assoc($sql_query)) {
@@ -33,6 +40,8 @@ $idEncomenda = 0;
                             <td>{$rows['dataEncomenda']}</td>
                             <td>{$rows['horaChegada']}</td>
                             <td>{$rows['nomeFornecedor']}</td>";
+                            
+                    $horaChegada = $rows['horaChegada'];
                             
                     // Armazena o valor de idEncomenda
                     $idEncomenda = $rows['idEncomenda'];
@@ -51,7 +60,18 @@ $idEncomenda = 0;
                         $quantCaixa += $rowsQuant['quantidade'];
                     }
 
-                      echo "<td>$quantCaixa</td>      
+                      echo "<td>$quantCaixa</td>";     
+
+                        // Calculando o tempo para liberar
+                        $tempoLiberacao = ceil($quantCaixa / 1000) * 20; // Arredondando para cima
+
+                
+                    $horaChegadaPr = new DateTime($horaChegada);
+                    $horaChegadaPr->add(new DateInterval("PT{$tempoLiberacao}M"));
+
+   
+                   echo " <td>{$horaChegadaPr->format('H:i')}</td>
+    
                             <td>
                              <a class=' btn btn-primary btn-sm' href='edita_encomenda.php?idEncomenda=" . $rows['idEncomenda'] . " '> 
                                 <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor'

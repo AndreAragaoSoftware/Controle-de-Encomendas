@@ -29,7 +29,7 @@ $idEncomenda = (!empty($_GET['idEncomenda'])) ? intval($_GET['idEncomenda']) : 0
             <span id="msgAlertaProduto"></span>
             <!-- Fornecedor -->
             <div class=" row">
-                <label for="ProdutoSel">Fornecedor</label>
+                <label for="ProdutoSel">Produto</label>
                 <select name="ProdutoSel" id="ProdutoSel">
                     <option value="">Selecione</option>
                 </select>

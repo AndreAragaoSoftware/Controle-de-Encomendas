@@ -26,7 +26,7 @@
             include '../../ligaBD.php';
         
             // Buscando os campos das tabelas utilizadores, funcao e login
-            $query = "SELECT * FROM produtos";
+            $query = "SELECT * FROM produtos ORDER BY tipoAnimal";
             $sql_query = mostraDados($query) or die("Falha na execução do código SQL");
         
             // Colocando os dados na tabela

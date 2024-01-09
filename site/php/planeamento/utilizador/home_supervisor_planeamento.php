@@ -39,7 +39,7 @@
             // Buscando os campos das tabelas utilizadores, funcao e login
             $query = "SELECT utilizadores.*, funcao.nomeFuncao, nomeUtilizador,pass FROM utilizadores
                       JOIN funcao ON utilizadores.idFuncao = funcao.idFuncao
-                      JOIN login ON utilizadores.idLogin = login.idLogin";
+                      JOIN login ON utilizadores.idLogin = login.idLogin ORDER BY nomeFuncao";
             $sql_query = mostraDados($query) or die("Falha na execução do código SQL");
         
             // Colocando os dados na tabela
