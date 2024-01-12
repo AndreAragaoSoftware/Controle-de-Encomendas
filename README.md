@@ -87,7 +87,7 @@ Inserir Quantidade de Caixas: André especifica a quantidade de caixas desse pro
 <img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/dfa411e8-f9ac-451e-b387-b4d19e76d3a4" width="50px" />
 </div>
 <div align="center">
-<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/12688f7b-5a8a-46cd-983a-749636a714dd" width="600px" />
+<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/12688f7b-5a8a-46cd-983a-749636a714dd" width="400px" />
 </div>
 
 #### Cálculo Automatizado
