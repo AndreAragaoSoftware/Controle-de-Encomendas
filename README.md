@@ -52,7 +52,7 @@ André descobre um recurso valioso: o filtro por data. Agora, ele tem a capacida
 #### Adicionar Nova Encomenda
 Ao se deparar com uma nova encomenda, André utiliza a função "Adicionar Encomenda". Um formulário intuitivo é apresentado, solicitando informações cruciais:
 <div align="center">
-<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/5ce18aec-0a42-4962-9277-a5eb47800531" width="300px" />
+<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/e4dffd8c-3082-465c-b402-9fbd373a1b7e" width="300px" />
 </div>
 
 Fornecedor: André escolhe o fornecedor da lista ou adiciona um novo, se necessário.
@@ -66,9 +66,18 @@ O sistema assegura que todos os campos obrigatórios sejam preenchidos antes de 
 
 #### Editar Encomendas
 Se necessário, André pode editar as encomendas existentes para refletir mudanças ou atualizações. Por exemplo, correções do fornecedor.
+<div align="center">
+<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/fda2b2dc-50ff-4d1f-9f35-85c3282e4e58" width="200px" />
+</div>
 
 #### Visualizar Encomendas
 André pode navegar facilmente pelos detalhes de cada encomenda clicando na entrada correspondente. Aqui, ele encontra informações detalhadas sobre os produtos, a quantidade de caixas e outros dados relevantes.
+<div align="center">
+<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/4c27252c-4577-4159-8037-ba423654e279" width="200px" />
+</div>
+<div align="center">
+<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/d89159d8-cf25-45af-b731-747d88c371e4" width="600px" />
+</div>
 
 #### Adição de Produtos
 Ao navegar pela interface de encomendas, André percebe uma nova funcionalidade vital: a capacidade de adicionar produtos diretamente a uma encomenda.
