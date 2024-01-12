@@ -46,19 +46,23 @@ André se depara com uma interface amigável que lista todas as encomendas recen
 
 #### Buscando Encomendas por Data
 André descobre um recurso valioso: o filtro por data. Agora, ele tem a capacidade de buscar encomendas específicas com base em datas específicas. Esse filtro proporciona uma visão mais precisa das atividades logísticas, permitindo que André e sua equipe acessem rapidamente as informações relevantes.
-
 <div align="center">
 <img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/0e2b5a11-3771-4c3e-b855-7da60bbdb07a" width="700px" />
 </div>
-<br>
 #### Adicionar Nova Encomenda
 Ao se deparar com uma nova encomenda, André utiliza a função "Adicionar Encomenda". Um formulário intuitivo é apresentado, solicitando informações cruciais:
+<div align="center">
+<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/5ce18aec-0a42-4962-9277-a5eb47800531" width="300px" />
+</div>
 
 Fornecedor: André escolhe o fornecedor da lista ou adiciona um novo, se necessário.
 Data de Chegada: Ele insere a data programada para a chegada da encomenda.
 Hora de Chegada: André especifica o horário estimado para a chegada.
 Validação dos Campos:
 O sistema assegura que todos os campos obrigatórios sejam preenchidos antes de permitir o envio do formulário. Se algum campo estiver em branco ou com informações incorretas, um alerta amigável orienta André a corrigir os dados antes de prosseguir.
+<div align="center">
+<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/6ae7db0e-cb71-4fab-99f5-0942e2d7dd3c" width="300px" />
+</div>
 
 #### Editar Encomendas
 Se necessário, André pode editar as encomendas existentes para refletir mudanças ou atualizações. Por exemplo, correções do fornecedor.
