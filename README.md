@@ -67,16 +67,16 @@ O sistema assegura que todos os campos obrigatórios sejam preenchidos antes de 
 #### Editar Encomendas
 Se necessário, André pode editar as encomendas existentes para refletir mudanças ou atualizações. Por exemplo, correções do fornecedor.
 <div align="center">
-<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/fda2b2dc-50ff-4d1f-9f35-85c3282e4e58" width="200px" />
+<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/fda2b2dc-50ff-4d1f-9f35-85c3282e4e58" width="50px" />
 </div>
 
 #### Visualizar Encomendas
 André pode navegar facilmente pelos detalhes de cada encomenda clicando na entrada correspondente. Aqui, ele encontra informações detalhadas sobre os produtos, a quantidade de caixas e outros dados relevantes.
 <div align="center">
-<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/4c27252c-4577-4159-8037-ba423654e279" width="200px" />
+<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/4c27252c-4577-4159-8037-ba423654e279" width="50px" />
 </div>
 <div align="center">
-<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/d89159d8-cf25-45af-b731-747d88c371e4" width="600px" />
+<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/d89159d8-cf25-45af-b731-747d88c371e4" width="700px" />
 </div>
 
 #### Adição de Produtos
