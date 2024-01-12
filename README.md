@@ -40,7 +40,7 @@ André é alertado para preencher todos os campos obrigatórios caso esqueça de
 Se, por acaso, André introduzir informações incorretas, um alerta amigável informa que o login ou a senha está errado. No entanto, ao fornecer as informações corretas, o sistema o direciona automaticamente para uma página personalizada com base na função previamente cadastrada.
 
 <div align="center">
-<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/813cd755-5210-48d0-a22e-8b520d977fa5" width="600px" />
+<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/813cd755-5210-48d0-a22e-8b520d977fa5" width="700px" />
 </div>
 
 ## Explorando as Encomendas
