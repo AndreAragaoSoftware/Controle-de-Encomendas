@@ -31,6 +31,8 @@ André inicia a jornada de implementação do sistema, consciente de que ele fac
 ### Login: andre
 ### Password: admin
 André é alertado para preencher todos os campos obrigatórios caso esqueça de informar algum durante o login. Com as credenciais corretas, ele prossegue para a validação na base de dados.
+![login_pass](https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/a498058d-fc49-46e8-8790-26b54cbceb53)
+
 
 Se, por acaso, André introduzir informações incorretas, um alerta amigável informa que o login ou a senha está errado. No entanto, ao fornecer as informações corretas, o sistema o direciona automaticamente para uma página personalizada com base na função previamente cadastrada.
 
