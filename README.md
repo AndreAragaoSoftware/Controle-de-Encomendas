@@ -25,11 +25,11 @@ O projeto "Controle de Encomendas" foi desenvolvido com o propósito de proporci
 
 André Oliveira Aragão é o Supervisor de Planejamento na fábrica de carne onde trabalha. Com a crescente demanda por uma gestão mais eficiente dos recebimentos de encomendas, André decide implementar o sistema "Controle de Encomendas" para otimizar o processo logístico.
 
-##História
+- História
 André inicia a jornada de implementação do sistema, consciente de que ele facilitará a organização e o gerenciamento do recebimento de mercadorias. Ao acessar a primeira tela de login, ele utiliza suas credenciais fornecidas pela empresa:
 
-###Login: andre
-###Password: admin
+- Login: andre
+- Password: admin
 André é alertado para preencher todos os campos obrigatórios caso esqueça de informar algum durante o login. Com as credenciais corretas, ele prossegue para a validação na base de dados.
 
 Se, por acaso, André introduzir informações incorretas, um alerta amigável informa que o login ou a senha está errado. No entanto, ao fornecer as informações corretas, o sistema o direciona automaticamente para uma página personalizada com base na função previamente cadastrada.
