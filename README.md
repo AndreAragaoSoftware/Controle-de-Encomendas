@@ -83,6 +83,12 @@ André pode navegar facilmente pelos detalhes de cada encomenda clicando na entr
 Ao navegar pela interface de encomendas, André percebe uma nova funcionalidade vital: a capacidade de adicionar produtos diretamente a uma encomenda.
 Selecionar o Produto: Uma lista de produtos disponíveis é apresentada, permitindo que André escolha o produto desejado.
 Inserir Quantidade de Caixas: André especifica a quantidade de caixas desse produto na encomenda.
+<div align="center">
+<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/dfa411e8-f9ac-451e-b387-b4d19e76d3a4" width="50px" />
+</div>
+<div align="center">
+<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/12688f7b-5a8a-46cd-983a-749636a714dd" width="700px" />
+</div>
 
 #### Cálculo Automatizado
 Ao cadastrar um produto na encomenda, André percebe que o sistema agora realiza automaticamente o cálculo do tempo necessário para liberar o carro. Isso leva em consideração a quantidade de caixas adicionadas.
@@ -93,9 +99,15 @@ O desenvolvedor do sistema demonstra um comprometimento contínuo com a melhoria
 
 #### Acesso à Funcionalidade de Exclusão
 Ao navegar pela lista de encomendas, André percebe a opção de exclusão disponível para cada registro. Essa funcionalidade permite que ele remova encomendas que não são mais relevantes ou foram cadastradas erroneamente.
+<div align="center">
+<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/4d83527e-006f-4566-b8ff-680a1392790f" width="50px" />
+</div>
 
 #### Alerta de Confirmação
 Ao selecionar a opção de exclusão, o sistema exibe um alerta de confirmação. Esse alerta informa André sobre a ação que está prestes a realizar e solicita uma confirmação antes de proceder com a exclusão.
+<div align="center">
+<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/bb8c779e-42bd-479b-a6f7-1ac58da0133c" width="500px" />
+</div>
 
 Escolha Consciente do Utilizador
 André, consciente da importância de manter registros precisos, avalia cuidadosamente se a encomenda deve ser deletada. O alerta de confirmação oferece duas opções:
