@@ -40,15 +40,19 @@ André é alertado para preencher todos os campos obrigatórios caso esqueça de
 Se, por acaso, André introduzir informações incorretas, um alerta amigável informa que o login ou a senha está errado. No entanto, ao fornecer as informações corretas, o sistema o direciona automaticamente para uma página personalizada com base na função previamente cadastrada.
 
 <div align="center">
-<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/813cd755-5210-48d0-a22e-8b520d977fa5" width="700px" />
+<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/813cd755-5210-48d0-a22e-8b520d977fa5" width="600px" />
 </div>
-
+<br>
 ## Explorando as Encomendas
 André se depara com uma interface amigável que lista todas as encomendas recentes. Cada encomenda é detalhada com informações essenciais, como o fornecedor, a data de chegada, o status atual e outros detalhes relevantes. Ele tem a liberdade de:
 
 #### Buscando Encomendas por Data
 André descobre um recurso valioso: o filtro por data. Agora, ele tem a capacidade de buscar encomendas específicas com base em datas específicas. Esse filtro proporciona uma visão mais precisa das atividades logísticas, permitindo que André e sua equipe acessem rapidamente as informações relevantes.
 
+<div align="center">
+<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/0e2b5a11-3771-4c3e-b855-7da60bbdb07a" width="700px" />
+</div>
+<br>
 #### Adicionar Nova Encomenda
 Ao se deparar com uma nova encomenda, André utiliza a função "Adicionar Encomenda". Um formulário intuitivo é apresentado, solicitando informações cruciais:
 
