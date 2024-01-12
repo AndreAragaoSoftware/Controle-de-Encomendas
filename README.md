@@ -47,7 +47,7 @@ André se depara com uma interface amigável que lista todas as encomendas recen
 #### Buscando Encomendas por Data
 André descobre um recurso valioso: o filtro por data. Agora, ele tem a capacidade de buscar encomendas específicas com base em datas específicas. Esse filtro proporciona uma visão mais precisa das atividades logísticas, permitindo que André e sua equipe acessem rapidamente as informações relevantes.
 <div align="center">
-<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/0e2b5a11-3771-4c3e-b855-7da60bbdb07a" width="700px" />
+<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/0e2b5a11-3771-4c3e-b855-7da60bbdb07a" width="600px" />
 </div>
 #### Adicionar Nova Encomenda
 Ao se deparar com uma nova encomenda, André utiliza a função "Adicionar Encomenda". Um formulário intuitivo é apresentado, solicitando informações cruciais:
@@ -76,7 +76,7 @@ André pode navegar facilmente pelos detalhes de cada encomenda clicando na entr
 <img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/4c27252c-4577-4159-8037-ba423654e279" width="50px" />
 </div>
 <div align="center">
-<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/d89159d8-cf25-45af-b731-747d88c371e4" width="700px" />
+<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/d89159d8-cf25-45af-b731-747d88c371e4" width="600px" />
 </div>
 
 #### Adição de Produtos
@@ -87,7 +87,7 @@ Inserir Quantidade de Caixas: André especifica a quantidade de caixas desse pro
 <img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/dfa411e8-f9ac-451e-b387-b4d19e76d3a4" width="50px" />
 </div>
 <div align="center">
-<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/12688f7b-5a8a-46cd-983a-749636a714dd" width="700px" />
+<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/12688f7b-5a8a-46cd-983a-749636a714dd" width="600px" />
 </div>
 
 #### Cálculo Automatizado
