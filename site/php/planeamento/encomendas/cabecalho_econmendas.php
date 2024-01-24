@@ -40,7 +40,8 @@
                     </li>
                 </ul>
                 <!-- Botão para criar enconmenda -->
-                <a href="formulario_encomendas.php" class="btn btn-outline-success" style="margin-right: 10px;">Adcionar
+                <a href="formulario_encomendas.php" class="btn btn-outline-success"
+                    style="margin-right: 10px;">Adicionar
                     Encomenda</a>
 
             </div>
