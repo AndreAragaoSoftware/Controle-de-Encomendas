@@ -33,12 +33,27 @@ André inicia a jornada de implementação do sistema, consciente de que ele fac
 André é alertado para preencher todos os campos obrigatórios caso esqueça de informar algum durante o login. Com as credenciais corretas, ele prossegue para a validação na base de dados.
 
 <div align="center">
-<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/179c3454-ad7b-4511-adce-179580874ad2" width="300px" />
+
+#### Sistema
+<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/179c3454-ad7b-4511-adce-179580874ad2" width="200px" 
+height="200px"/>
+
+#### Base de dados
+<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/3087877c-219e-49ae-bab9-ef596a1b8ff2" width="300px" 
+height="200px"/>
+
 </div>
 Se, por acaso, André introduzir informações incorretas, um alerta amigável informa que o login ou a senha está errado. No entanto, ao fornecer as informações corretas, o sistema o direciona automaticamente para uma página personalizada com base na função previamente cadastrada.
 
 <div align="center">
+
+#### Sistema
 <img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/813cd755-5210-48d0-a22e-8b520d977fa5" width="600px" />
+
+#### Base de dados
+<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/d41f9a6c-602b-4aff-be81-928fbc8bc24b" width="400px" 
+height="200px"
+margin-top ="100px"/>
 </div>
 
 ## Explorando as Encomendas
@@ -61,7 +76,14 @@ Hora de Chegada: André especifica o horário estimado para a chegada.
 Validação dos Campos:
 O sistema assegura que todos os campos obrigatórios sejam preenchidos antes de permitir o envio do formulário. Se algum campo estiver em branco ou com informações incorretas, um alerta amigável orienta André a corrigir os dados antes de prosseguir.
 <div align="center">
+
+#### Sistema
 <img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/6ae7db0e-cb71-4fab-99f5-0942e2d7dd3c" width="300px" />
+
+#### Base de dados
+<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/78a9c8e1-4cf3-417a-b9a0-551808f9f4f8" width="300px" 
+height="150px"
+margin-top ="100px"/>
 </div>
 
 #### Editar Encomendas
@@ -73,10 +95,15 @@ Se necessário, André pode editar as encomendas existentes para refletir mudan�
 #### Visualizar Encomendas
 André pode navegar facilmente pelos detalhes de cada encomenda clicando na entrada correspondente. Aqui, ele encontra informações detalhadas sobre os produtos, a quantidade de caixas e outros dados relevantes.
 <div align="center">
+
+#### Sistema
 <img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/4c27252c-4577-4159-8037-ba423654e279" width="50px" />
 </div>
 <div align="center">
 <img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/d89159d8-cf25-45af-b731-747d88c371e4" width="600px" />
+
+#### Base de dados
+<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/664fe213-bd54-4290-82d0-a21827aaeca0" width="400px" />
 </div>
 
 #### Adição de Produtos
@@ -84,10 +111,17 @@ Ao navegar pela interface de encomendas, André percebe uma nova funcionalidade 
 Selecionar o Produto: Uma lista de produtos disponíveis é apresentada, permitindo que André escolha o produto desejado.
 Inserir Quantidade de Caixas: André especifica a quantidade de caixas desse produto na encomenda.
 <div align="center">
+
+#### Sistema
 <img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/dfa411e8-f9ac-451e-b387-b4d19e76d3a4" width="50px" />
 </div>
 <div align="center">
 <img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/12688f7b-5a8a-46cd-983a-749636a714dd" width="400px" />
+
+
+#### Base de Dados
+<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/98257611-c0af-4da6-b2b0-88c289384453" width="400px" />
+
 </div>
 
 #### Cálculo Automatizado
@@ -129,6 +163,13 @@ André também encontra a opção de cadastrar fornecedores. Ao adicionar inform
 André, animado com a eficiência proporcionada pelo sistema, antecipa ainda mais melhorias e funcionalidades que podem ser adicionadas ao longo do tempo. Ele está confiante de que o sistema "Controle de Encomendas" continuará a evoluir, adaptando-se às necessidades dinâmicas da fábrica e contribuindo para uma gestão logística cada vez mais eficiente.
 
 Essa conclusão marca não apenas o fim da exploração inicial de André no sistema, mas também o início de uma nova fase na gestão logística da fábrica de carne, impulsionada pelo poder e abrangência do sistema "Controle de Encomendas".
+
+## Diagrama Base de Dados
+
+<div align="center">
+<img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/85cf414c-bbc8-4f52-bf93-2f9c7123901c" width="500px" />
+</div>
+
 
 # Pré-requisitos: npm / yarn
 
