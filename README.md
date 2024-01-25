@@ -64,6 +64,7 @@ André descobre um recurso valioso: o filtro por data. Agora, ele tem a capacida
 <div align="center">
 <img src="https://github.com/AndreAragaoSoftware/Controle-de-Encomendas/assets/64162795/0e2b5a11-3771-4c3e-b855-7da60bbdb07a" width="600px" />
 </div>
+
 #### Adicionar Nova Encomenda
 Ao se deparar com uma nova encomenda, André utiliza a função "Adicionar Encomenda". Um formulário intuitivo é apresentado, solicitando informações cruciais:
 <div align="center">
